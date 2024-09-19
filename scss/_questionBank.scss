@@ -1,0 +1,142 @@
+.questionBank_type{
+    padding: 40px 0 80px 0;
+    h4{
+         text-align: center;
+         font-size: 22px;
+         font-weight: 700;
+         font-family: 'Inter', sans-serif;
+         color: #232323;
+         text-transform: uppercase;
+         line-height: 25px;
+    }
+
+    .questionBank_type_wrapper{
+        padding-top: 40px;
+         .questionBank_type_card{
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 15px 15px 20px 15px;
+            margin-bottom: 30px;
+            cursor: pointer;
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+            .card_image{
+                height: 210px;
+                width: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+                position: relative;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                &::after{
+                    position: absolute;
+                    content: '';
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(0, 0, 0, 0.2);
+                }
+            }
+            .card_bottom{
+                padding-top: 12px;
+                .type_name{
+                    font-size: 18px;
+                    color: $blackColor;
+                    font-weight: 500;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
+         }
+    }
+}
+
+
+
+.common_hero_plate{
+    padding: 140px 0 50px 0;
+    background-color: $primaryColor;
+    position: relative;
+    z-index: 1;
+      &::after{
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-image: url(../images/shape.png);
+          background-repeat: repeat;
+          z-index: -1;
+          opacity: .4;
+      }
+      h4{
+          font-size: 40px;
+          color: $whiteColor;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: 900;
+      }
+  }
+  
+  .question_bank{
+     .question_bank_wrapper{
+      width: 75%;
+      margin:  50px auto 0;
+      background-color: #eceff2;
+      border-radius: 10px;
+      padding: 30px 25px;
+      .question_bank_item{
+          &:nth-child(even){
+              background-color: #fff;
+              // border-radius: 10px;
+          }
+          padding: 10px 15px;
+          margin-bottom: 10px;
+          .item_question{
+              font-size: 17px;
+              color: #525252;
+              font-weight: 500;
+              span{
+                  font-weight: 400;
+                  color: #585757;
+                  font-size: 16px;
+              }
+          }
+          .item_answer{
+              color: rgb(6, 176, 6);
+              font-size: 16px;
+              font-weight: 400;
+              padding-top: 6px;
+              font-family: 'Open Sans', sans-serif;
+              span{
+                  color: $blackColor;
+                  font-weight: 500;
+              }
+          }
+      }
+      .loadmore_btn{
+          display: flex;
+          justify-content: center;
+          padding-top: 20px;
+          span{
+              font-size: 14px;
+              padding: 4px 20px;
+              border-radius: 35px;
+              border: 1px solid $primaryColor;
+              color: $primaryColor;
+              cursor: pointer;
+              &:hover{
+                  background-color: $primaryColor;
+                  color: $whiteColor;
+              }
+          }
+      }
+     }
+  }

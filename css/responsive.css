@@ -1,0 +1,78 @@
+@media (min-width: 280px) and (max-width: 991.98px){
+    .banner .banner_item {
+        height: auto;
+    }
+    .banner .banner_bottom_shape {
+        display: none;
+    }
+    .banner {
+        padding-top: 30px;
+        background-image: url(../images/homeBg.jpg);
+    }
+    .banner .banner_item .banner_content {
+        display: list-item;
+        list-style: none;
+    }
+    .banner .banner_item .banner_content .banner_text {
+        padding-bottom: 50px;
+    }
+    .banner .banner_item .banner_content .banner_text h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .section_heading {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .about .about_wrapper .about_wrap {
+        padding: 0 0px;
+        margin-top: 12px;
+    }
+    .video_section .video_wrap {
+        width: 100%;
+        height: 280px;
+        border: 1px solid rgba(195,195,195,.441);
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #f3f3f3;
+    }
+    .appointment {
+        margin: 0px 0 10px 0;
+    }
+    .appointment .appointment_wrapper .appointment_img .round1 {
+      display: none;
+    }
+    .sub_section_heading {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .calendar {
+        margin: 30px auto;
+    }
+    .footer_main .footer_wrapper .footer_wrap h4 {
+        padding-top: 20px;
+    }
+    .details_thumb .details_thum_wrapper {
+        height: 160px;
+        margin-top: 0px;
+    }
+    .details_content_section .details_content_wrappper .details_content h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .details_thumb .details_thum_wrapper h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .contact {
+        padding: 50px 0;
+    }
+    .contact_form {
+        padding-top: 25px;
+    }
+    .footer_contact .footer_contact_wrapper h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}

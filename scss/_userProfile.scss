@@ -1,0 +1,294 @@
+.user_profile {
+  padding: 20px 0;
+  .user_profile_wrapper {
+    width: 85%;
+    margin: 0 auto;
+    .profile_card {
+      //   background-color: #edecf1;
+      border-radius: 16px;
+      padding: 0 25px;
+      .profile_img {
+        height: 130px;
+        width: 130px;
+        background-color: rgb(219, 0, 0);
+        border-radius: 50%;
+        color: $whiteColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        font-weight: 500;
+        font-family: "Inter", sans-serif;
+        margin: 0 auto;
+        overflow: hidden;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .profile_name {
+        font-size: 22px;
+        font-weight: 600;
+        color: $blackColor;
+        line-height: 32px;
+        text-align: center;
+        padding-top: 12px;
+      }
+      .wallet_overview {
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(174, 174, 205, 0.257);
+        border-radius: 10px;
+        margin-top: 10px;
+        text-align: center;
+        h6 {
+          color: #404040;
+          font-weight: 400;
+        }
+        h4 {
+          font-size: 34px;
+          color: #242526;
+          padding-top: 5px;
+          font-family: "Inter", sans-serif;
+          font-weight: 700;
+          line-height: 32px;
+        }
+        .wallet_btn_wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          width: 100%;
+          padding: 0 10px;
+          margin-top: 8px;
+          .wallet_btn {
+            width: 47%;
+            background-color: #fff;
+            border-radius: 35px;
+            font-size: 12px;
+            padding: 5px 10px;
+            color: $primaryColor;
+            font-weight: 500;
+            border: 1px solid #c3c3c347;
+            cursor: pointer;
+            &:hover {
+              background-color: #c9c9df87;
+              color: $blackColor;
+            }
+          }
+        }
+      }
+      .manage_btn {
+        padding: 10px 10px 11px 10px;
+        background-color: #c9c9df87;
+        border-radius: 6px;
+        text-align: center;
+        font-size: 14px;
+        color: $blackColor;
+        margin-top: 10px;
+        cursor: pointer;
+        &:hover {
+          background-color: #a6a6d287;
+        }
+      }
+      .profile_about {
+        width: 100%;
+        // height: 200px;
+        border: 1px solid #c3c3c38f;
+        margin-top: 15px;
+        border-radius: 6px;
+        padding: 20px;
+
+        h4 {
+          font-size: 15px;
+          font-weight: 500;
+          color: #404040;
+          padding-bottom: 10px;
+        }
+        .about_item {
+          color: #545f72;
+          font-size: 15px;
+          margin-top: 12px;
+          font-family: "Inter", sans-serif;
+          i {
+            margin-right: 25px;
+          }
+        }
+      }
+    }
+    .profile_history {
+      width: 100%;
+      h5 {
+        font-size: 15px;
+        color: #404040;
+        font-weight: 400;
+        padding-bottom: 10px;
+        i {
+          font-size: 13px;
+        }
+      }
+      .history_item {
+        height: 110px;
+        width: 100%;
+        background-color: #dfdfe557;
+        border-radius: 10px;
+        margin-top: 15px;
+        border: 1px solid #c3c3c325;
+        cursor: pointer;
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        .history_item_text {
+          padding: 12px 10px 10px 15px;
+          h4 {
+            font-size: 17px;
+            font-weight: 500;
+            color: #404040;
+            @include text-ellips;
+            line-height: 20px;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 400;
+            color: #515151;
+            @include text-ellips;
+            line-height: 15px;
+          }
+          .point_wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .point_wrap {
+              font-size: 13px;
+              font-weight: 400;
+              color: #4c5461;
+              span {
+                font-weight: 500;
+                font-size: 15px;
+              }
+            }
+          }
+        }
+        .history_item_img {
+          display: flex;
+          justify-content: center;
+          padding-top: 10px;
+          img {
+            width: 100%;
+            max-height: 80px;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+}
+
+.profile_setting {
+  .profile_setting_wrapper {
+    width: 62%;
+    // background-color: #dfdfe57f;
+    // border: 1px solid #c3c3c325;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 15px;
+    margin: 25px auto;
+    padding: 20px;
+    .settings_wrapper{
+      padding: 30px 50px 10px 50px; 
+      .setting_form{
+        .form-floating{
+          margin-top: 15px;
+            .form-control{
+                border-radius: 8px;
+                height: 50px;
+                padding: 20px 10px 5px 15px;
+                font-size: 15px;
+                border: 1px solid #c7c6c6;
+                &:focus{
+                    outline: 0;
+                    box-shadow: none;
+                    border-color: #c3c3c3;
+                }
+            }
+            label{
+                font-size: 14px;
+                padding: 12px 10px 10px 15px;
+                color: #282b30;
+                font-weight: 500;
+            }
+        }
+        .authentication_btn{
+            width: 100%;
+            height: 45px;
+            background-color: $primaryColor;
+            color: $whiteColor;
+            font-size: 15px;
+            border-radius: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+            &:hover{
+                background-color: #5c4cb5;
+            }
+        }
+    }
+    }
+
+  }
+}
+
+.uploadBox {
+  width: 150px;
+  height: 150px;
+  background: rgb(201, 3, 3);
+  margin: 0.5em auto;
+  position: relative;
+  border-radius: 50%;
+  z-index: 1;
+  overflow: hidden;
+
+  &:hover .upload_placeholder{
+   opacity: 1;
+  }
+
+  .upload_placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.25s ease 0s;
+    color: #fff;
+    background: rgba(9, 30, 66, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    i {
+      font-size: 28px;
+    }
+  }
+}
+.uploadBox input {
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Hide the button */
+  cursor: pointer;
+}
+.uploadBox h5 {
+  text-align: center;
+  color: #dddcdc;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}

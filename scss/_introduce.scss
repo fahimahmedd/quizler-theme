@@ -1,0 +1,71 @@
+.introduce{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 30.254777070063696%);
+}
+.introduce_wrapper{
+    padding-top: 200px;
+      .place_text{
+          position: relative;
+          text-align: center;
+          h2{
+            -webkit-background-clip: text !important;
+            background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            background:linear-gradient(180deg, rgba(31, 77, 126, 0.136) 0%, rgba(255,255,255,0.2) 90%) ;
+            // background: linear-gradient(180deg, rgba(31, 86, 126, 0.007) 0%, #4286902c 100%);
+            font-size: 320px;
+            line-height:400px;
+            font-weight: 900;
+            @include text-ellips;
+          }
+      }
+      .introduce_main_content{
+        position: relative;
+        margin-top: -120px;
+        z-index: 2;
+          h3{
+            text-align: center;
+            font-size: 60px;
+            line-height: 70px;
+            font-weight: 900;
+            color: #032A3E;
+            // text-transform: uppercase;
+            padding-top: 15px;
+            @include text-ellips-2;
+          }
+          p{
+            text-align: center;
+            padding: 10px 200px;
+            font-size: 16px;
+            color: $textColor;
+          }
+          .tag_content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            .tag_line{
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                color: #032A3E;
+                font-weight: 400;
+                border-radius: 35px;
+                background-color: #683df719;
+                padding: 4px 20px;
+                margin: 0 10px;
+                i{
+                    margin-right: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #3105b4e7;
+                    font-size: 16px;
+                }
+            }
+          }
+      }
+}

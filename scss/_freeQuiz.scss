@@ -1,0 +1,429 @@
+.free_quiz {
+    height: 100vh;
+    width: 100%;
+    background-color: $primaryColor;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+
+    // &::after{
+    //     position: absolute;
+    //     content: '';
+    //     top: 0;
+    //     left: 0;
+    //     height: 100%;
+    //     width: 100%;
+    //     background-image: url(../images/shape.png);
+    //     background-repeat: repeat;
+    //     z-index: -1;
+    //     opacity: .35;
+    // }
+
+    .mob_shape {
+        position: absolute;
+        top: 40px;
+        right: 50px;
+        z-index: -1;
+
+        img {
+            max-height: 300px;
+            width: auto;
+            object-fit: cover;
+            opacity: .4;
+            transform: rotate(-20deg);
+        }
+    }
+
+    .mob_shape_2 {
+        position: absolute;
+        bottom: -30px;
+        left: 20px;
+        z-index: -1;
+
+        img {
+            max-height: 300px;
+            width: auto;
+            object-fit: cover;
+            opacity: .3;
+            transform: rotate(-20deg);
+        }
+    }
+
+    .free_quiz_wrapper {
+        background-color: #fff;
+        height: 77%;
+        max-height: 490px;
+        width: 800px;
+        border-radius: 30px;
+        padding: 30px 20px 20px 20px;
+        position: relative;
+        z-index: 1;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        &::after{
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 100%;
+            background-image: url(../images/shapePurple.webp);
+            top: 0;
+            left: 0;
+            background-repeat: repeat;
+            opacity: .3;
+            z-index: -1;
+        }
+        h4{
+            font-size: 35px;
+            font-weight: 700;
+            color: $blackColor;
+            text-align: center;
+        }
+        .question_title {
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            span {
+                font-size: 14px;
+                padding: 4px 20px;
+                border-radius: 35px;
+                background-color: $primaryColor;
+                color: $whiteColor;
+                font-weight: 400;
+            }
+        }
+        .freeQuiz_question_pallate{
+            height: 180px;
+            width: 70%;
+            margin: 25px auto;
+            background-color: rgba(198, 212, 232, 0.786);
+            border: 1px solid #c3c3c324;
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 12px;
+            .question_text{
+                font-size: 24px;
+                font-weight: 700;
+                color: $blackColor;
+                line-height: 35px;
+                font-family: 'Inter', sans-serif;
+            }
+        }
+        .freeQuiz_options{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-top: 15px;
+            .question_option{
+                height: 45px;
+                background-color: #ced9e7b2;
+                width: 45%;
+                border-radius: 35px;
+                margin: 8px 10px;
+                font-size: 15px;
+                font-family: 'Inter', sans-serif;
+                color: $blackColor;
+                font-weight: 500;
+                cursor: pointer;
+                text-align: start;
+                label{
+                    cursor: pointer;
+                    height: 100%;
+                    width: 100%;
+                    padding: 10px 10px 10px 25px;
+                }
+                input{
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    display: none;
+                }
+                &:hover{
+                    background-color: #b5c2d3d3;
+                }
+                &:focus{
+                    background-color: green;
+                    color: $whiteColor;
+                }
+            }
+        }
+    }
+}
+
+
+.freeQuiz_result{
+    padding: 30px 0 20px 0;
+    position: relative;
+    min-height: 500px;
+    .freeQuiz_shape{
+        position: absolute;
+        right: 10px;
+        top: 30px;
+        img{
+            max-height: 500px;
+            width: 100%;
+            object-fit: contain;
+            opacity: .3;
+        }
+    }
+    .freeQuiz_result_wrapper{
+        h4{
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+            color: #232323;
+            line-height: 25px;
+            padding: 0 250px;
+        }
+        h5{
+            font-size: 22px;
+            font-weight: 700;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+            color: #232323;
+            text-transform: uppercase;
+            line-height: 25px;
+            padding-top: 20px;
+        }
+
+        .free_quiz_score{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 20px;
+             .free_quiz_score_pallate{
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                background-color: $primaryColor;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .pallate_score{
+                    font-size: 50px;
+                    color: $whiteColor;
+                    font-weight: 500;
+                    font-family: 'Inter', sans-serif;
+                }
+             }
+             .free_quiz_btn_wrapper{
+                padding-top: 15px;
+                z-index: 6;
+                .free_quiz_btn{
+                    padding: 8px 36px;
+                    background-color: #ced9e7cc;
+                    border-radius: 35px;
+                    margin: 8px 10px;
+                    font-size: 15px;
+                    font-family: 'Inter', sans-serif;
+                    color: $blackColor;
+                    font-weight: 500;
+                    cursor: pointer;
+                    text-align: center;
+                    &:hover{
+                        background-color: $primaryColor;
+                        color: $whiteColor;
+                    }
+                }
+                .active{
+                    background-color: $primaryColor;
+                    color: $whiteColor;
+                    &:hover{
+                        background-color: #ced9e7cc;
+                        color: $blackColor
+                    }
+                }
+             }
+        }
+    }
+}
+
+
+
+//  Celebration Style
+#celebration-style , .celebration_style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 5;
+}
+#celebration-style{
+    display: none;
+}
+.celebration-piece {
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background: #ffd300;
+    top: 0;
+    opacity: 0;
+}
+.celebration-piece:nth-child(1) {
+    left: 7%;
+    -webkit-transform: rotate(-40deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 182ms;
+    -webkit-animation-duration: 1116ms;
+}
+.celebration-piece:nth-child(2) {
+    left: 14%;
+    -webkit-transform: rotate(4deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 161ms;
+    -webkit-animation-duration: 1076ms;
+}
+.celebration-piece:nth-child(3) {
+    left: 21%;
+    -webkit-transform: rotate(-51deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 481ms;
+    -webkit-animation-duration: 1103ms;
+}
+.celebration-piece:nth-child(4) {
+    left: 28%;
+    -webkit-transform: rotate(61deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 334ms;
+    -webkit-animation-duration: 708ms;
+}
+.celebration-piece:nth-child(5) {
+    left: 35%;
+    -webkit-transform: rotate(-52deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 302ms;
+    -webkit-animation-duration: 776ms;
+}
+.celebration-piece:nth-child(6) {
+    left: 42%;
+    -webkit-transform: rotate(38deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 180ms;
+    -webkit-animation-duration: 1168ms;
+}
+.celebration-piece:nth-child(7) {
+    left: 49%;
+    -webkit-transform: rotate(11deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 395ms;
+    -webkit-animation-duration: 1200ms;
+}
+.celebration-piece:nth-child(8) {
+    left: 56%;
+    -webkit-transform: rotate(49deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 14ms;
+    -webkit-animation-duration: 887ms;
+}
+.celebration-piece:nth-child(9) {
+    left: 63%;
+    -webkit-transform: rotate(-72deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 149ms;
+    -webkit-animation-duration: 805ms;
+}
+.confcelebrationetti-piece:nth-child(10) {
+    left: 70%;
+    -webkit-transform: rotate(10deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 351ms;
+    -webkit-animation-duration: 1059ms;
+}
+.celebration-piece:nth-child(11) {
+    left: 77%;
+    -webkit-transform: rotate(4deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 307ms;
+    -webkit-animation-duration: 1132ms;
+}
+.celebration-piece:nth-child(12) {
+    left: 84%;
+    -webkit-transform: rotate(42deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 464ms;
+    -webkit-animation-duration: 776ms;
+}
+.celebration-piece:nth-child(13) {
+    left: 91%;
+    -webkit-transform: rotate(-72deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 429ms;
+    -webkit-animation-duration: 818ms;
+}
+.celebration-piece:nth-child(14) {
+    left: 63%;
+    -webkit-transform: rotate(-72deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 149ms;
+    -webkit-animation-duration: 805ms;
+}
+.celebration-piece:nth-child(15) {
+    left: 70%;
+    -webkit-transform: rotate(10deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 351ms;
+    -webkit-animation-duration: 1059ms;
+}
+.celebration-piece:nth-child(16) {
+    left: 77%;
+    -webkit-transform: rotate(4deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 307ms;
+    -webkit-animation-duration: 1132ms;
+}
+.celebration-piece:nth-child(17) {
+    left: 84%;
+    -webkit-transform: rotate(42deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 464ms;
+    -webkit-animation-duration: 776ms;
+}
+.celebration-piece:nth-child(18) {
+    left: 91%;
+    -webkit-transform: rotate(-72deg);
+    -webkit-animation: makeItRain 1000ms infinite ease-out;
+    -webkit-animation-delay: 429ms;
+    -webkit-animation-duration: 818ms;
+}
+.celebration-piece:nth-child(odd) {
+    background: #7431e8;
+}
+.celebration-piece:nth-child(even) {
+    z-index: 1;
+}
+.celebration-piece:nth-child(4n) {
+    width: 5px;
+    height: 12px;
+    -webkit-animation-duration: 2000ms;
+}
+.celebration-piece:nth-child(3n) {
+    width: 3px;
+    height: 10px;
+    -webkit-animation-duration: 2500ms;
+    -webkit-animation-delay: 1000ms;
+}
+.celebration-piece:nth-child(4n-7) {
+  background: red;
+}
+.celebration-piece:nth-child(13n-17) {
+    background: rgb(190, 6, 246);
+  }
+@-webkit-keyframes makeItRain {
+    from {opacity: 0;}
+    50% {opacity: 1;}
+    to {-webkit-transform: translateY(550px);}
+}
